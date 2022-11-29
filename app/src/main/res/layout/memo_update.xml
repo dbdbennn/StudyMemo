@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#E4CCA8"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:padding="20dp">
+
+    <LinearLayout
+        android:id="@+id/linMemo"
+        android:layout_width="310dp"
+        android:layout_height="350dp"
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="25dp"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/memo_edit"
+        android:orientation="vertical"
+        android:padding="50dp">
+
+        <EditText
+            android:id="@+id/et_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="10dp"
+            android:background="@android:color/transparent"
+            android:hint="제목"
+            android:textColor="#504332"
+            android:textColorHint="#303030"
+            android:textSize="22dp"
+            android:textStyle="bold" />
+
+        <ScrollView
+            android:layout_width="210dp"
+            android:layout_height="match_parent"
+            android:layout_marginTop="10dp"
+            android:scrollbars="none">
+
+            <EditText
+                android:id="@+id/et_content"
+                android:layout_width="210dp"
+                android:layout_height="match_parent"
+                android:background="@android:color/transparent"
+                android:hint="내용 입력"
+                android:textColorHint="#504332"
+                android:textSize="16dp" />
+        </ScrollView>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btn_save"
+        android:layout_width="300dp"
+        android:layout_height="45dp"
+        android:layout_gravity="center"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/layout_radius"
+        android:text="저장"
+        android:textColor="#FAF4EE"
+        android:textSize="14dp" />
+</LinearLayout>
